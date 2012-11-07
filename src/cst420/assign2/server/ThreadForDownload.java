@@ -29,7 +29,6 @@ class TreadForDownload extends Thread {
 	            int n = fis.read(buff);
 	            if( n < 0 ) break;
 	            fos.write(buff,0,n);
-	            Thread.sleep(2000); //wait 2 seconds.
 	         }
 	         fis.close();
 	         fos.close();

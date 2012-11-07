@@ -42,10 +42,10 @@ public void run (){
       
       // byte[] buf = new byte[4096];
        while(true) {
-    	   int numr = fis.read(downloadInput,0,4069);
+    	   int numr = fis.read(downloadInput);
     	   System.out.println("system has read the file.");
     	   if( numr < 0 ) break;
-           fos.write(downloadInput);
+           fos.write(downloadInput,0,numr);
        }
        
        fos.close(); 

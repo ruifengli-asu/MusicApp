@@ -1,6 +1,7 @@
 package cst420.assign2.client;
 
 
+import cst420.PlayWavThread;
 import cst420.media.*;
 import javax.swing.*;
 
@@ -38,7 +39,9 @@ public class MusicLibraryApp extends MusicLibraryGui implements
     private DataInputStream  is;
     private TreadForUpload threadUpload;
     private ThreadForDownload threadDownload;
-    
+    private PlayWavThread player = null;
+    private boolean stopPlaying;
+
     
     public MusicLibraryApp(String base) {
 	super(base);
