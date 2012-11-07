@@ -1,0 +1,7 @@
+*.class
+*.wav
+
+# Package Files #
+*.jar
+*.war
+*.ear
